@@ -98,10 +98,6 @@
 </style>
 <?php RenderStyle::end() ?>
 
-<?php RenderJS::start() ?>
-
-<?php RenderJS::end() ?>
-
 <?php
 // include __DIR__ . "/components/header/index.php";
 // include __DIR__ . "/components/our-mission/index.php";

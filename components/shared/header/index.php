@@ -11,20 +11,9 @@
           <a href="<?php echo map_url("/contact-us") ?>" class="text-white hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact Us</a>
           <a href="<?php echo map_url("/library") ?>" class="text-white hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Library</a>
           <a href="<?php echo map_url("/program") ?>" class="text-white hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Program</a>
-          <!-- <div class="relative" @click.away="dropdownOpen = false">
-            <button @click="dropdownOpen = !dropdownOpen" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
-              More
-            </button>
-            <div x-show="dropdownOpen" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-20" x-transition style="display: none;">
-              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Item 1</a>
-              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Item 2</a>
-              <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Item 3</a>
-            </div>
-          </div> -->
         </div>
       </div>
 
-      <!-- Mobile menu button -->
       <div class="flex items-center md:hidden z-20">
         <button @click="toggleMobileMenu" class="bg-gray-100 p-2 rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-gray-500">
           <span class="sr-only">Open menu</span>
@@ -36,7 +25,6 @@
     </div>
   </div>
 
-  <!-- Mobile Drawer Menu -->
   <div x-show="mobileMenuOpen" @click.away="mobileMenuOpen = false"
     class="fixed bottom-0 left-0 right-0  z-30 transition-transform transform max-h-[50%] h-fit z-10"
     :class="mobileMenuOpen ? 'translate-y-0' : 'translate-y-full'">
@@ -48,7 +36,6 @@
       </div>
     </div>
   </div>
-
 
   <div x-show="mobileMenuOpen"
     class="fixed bottom-0 left-0 right-0 bg-[#000000b3] w-full h-full z-10">

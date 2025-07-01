@@ -1,5 +1,5 @@
 <div class="relative bg-[#14A083] text-white py-16 overflow-hidden">
-  <div class="container flex flex-col md:flex-row items-center md:items-start gap-12 ">
+  <div class="container flex flex-col md:flex-row items-center md:items-start gap-12">
 
     <!-- Gambar di kiri -->
     <div class="flex-shrink-0 max-w-md w-full">
