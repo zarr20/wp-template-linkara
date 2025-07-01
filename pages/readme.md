@@ -1,0 +1,1 @@
+setiap page di panggil sebagai sebagai sortcode

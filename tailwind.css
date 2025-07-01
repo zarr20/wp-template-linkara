@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y:auto;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    @apply mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8
+}
+
+.sectionMore:hover {
+    letter-spacing: .5px;
+}
+.sectionMore {
+    position: relative;
+    transition: 1s cubic-bezier(.19,1.13,.13,.93);
+    margin: 20px;
+}
+.sectionMore:hover:before {
+    left: -30px;
+}
+.sectionMore:before {
+    background: #f7c971;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 1px solid #f7c971;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition: 1s cubic-bezier(.19,1.13,.13,.93);
+}
+.sectionMore:after {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #20252f;
+    position: absolute;
+    top: 50%;
+    right: -48px;
+    transform: translateY(-50%);
+}
+
+#NavFloat ul {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#NavFloat ul li.current_page_item a {
+    color: #f7c971 !important;
+}

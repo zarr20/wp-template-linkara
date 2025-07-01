@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow: hidden;
+    margin: 0 !important;
+}
+
+html, body {
+    overflow-x: hidden;
+    overflow-y:auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    @apply mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8
+}
+
+
+.sectionMore:hover {
+    letter-spacing: .5px;
+}
+.sectionMore {
+    position: relative;
+    transition: 1s cubic-bezier(.19,1.13,.13,.93);
+    margin: 20px;
+}
+.sectionMore:hover:before {
+    left: -30px;
+}
+.sectionMore:before {
+    background: #f7c971;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 1px solid #f7c971;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    z-index: -1;
+    transform: translateY(-50%);
+    transition: 1s cubic-bezier(.19,1.13,.13,.93);
+}
+.sectionMore:after {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #20252f;
+    position: absolute;
+    top: 50%;
+    right: -48px;
+    transform: translateY(-50%);
+}
+
+
+
+/* Paragraph styling */
+.content-container p {
+    margin-bottom: 20px;
+    color: #444; /* Lighter gray */
+    font-size: 1rem; /* Regular paragraph size */
+}
+
+/* Unordered list (bullet points) */
+.content-container ul {
+    list-style-type: disc; /* Default bullet */
+    padding-left: 20px; /* Indent for list */
+    margin-bottom: 20px;
+}
+
+.content-container ul li {
+    margin-bottom: 10px; /* Space between list items */
+    color: #333;
+}
+
+/* Ordered list (numbered list) */
+.content-container ol {
+    list-style-type: decimal; /* Default numbered list */
+    padding-left: 20px; /* Indent for list */
+    margin-bottom: 20px;
+}
+
+.content-container ol li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Nested lists for unordered and ordered */
+.content-container ul ul, 
+.content-container ol ol {
+    list-style-type: circle; /* Change bullet for nested lists */
+    padding-left: 20px;
+}
+
+.content-container ul ol, 
+.content-container ol ul {
+    list-style-type: lower-alpha; /* Change numbering for nested lists */
+    padding-left: 20px;
+}
+
+/* Links inside the content */
+.content-container a {
+    text-decoration: none;
+}
+
+.content-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Blockquotes for quoted text */
+.content-container blockquote {
+    border-left: 4px solid ; /* Orange left border */
+    padding-left: 15px;
+    margin-left: 0;
+    font-style: italic;
+    color: #666;
+}

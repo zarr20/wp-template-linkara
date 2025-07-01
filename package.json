@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "tailwind": "npx tailwindcss -i ./tailwind.css -o ./assets/css/style.css --watch",
+        "start": "npx tailwindcss -i ./tailwind.css -o ./assets/css/style.css --minify --watch"
+      },
+    "devDependencies": {
+        "tailwindcss": "^3.1.8"
+    },
+    "dependencies": {
+        "bootstrap-icons": "^1.9.1"
+    }
+}
